@@ -8,6 +8,9 @@ public class StatisticsResult {
     public int humidityCount;
     public int pm25Count;
     public int pm10Count;
+    public int filteredTempCount;
+    public int filteredHumidityCount;
+    public int filteredPmCount;
 
     public double avgTemp;
     public double minTemp = Double.NaN;
@@ -28,6 +31,7 @@ public class StatisticsResult {
 
     public int uniqueLocations;
     public Map<Long, Integer> recordsPerLocation;
+    public Map<Long, String> locationCoordinates;
 
     @Override
     public String toString() {
