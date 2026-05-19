@@ -1,0 +1,16 @@
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\export\JsonExporter.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\export\PdfExporter.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\export\XmlExporter.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\model\Location.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\model\Root.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\model\Sensor.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\model\SensorDataValue.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\model\SensorType.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\service\DataFetcher.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\service\HttpDataFetcher.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\service\SensorDataClient.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\statistics\ConsoleReporter.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\statistics\StatisticsCalculator.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\kafka\statistics\StatisticsResult.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\Main.java
+C:\Users\Aleksandr\Desktop\PRA2026\src\main\java\TestPdf.java
