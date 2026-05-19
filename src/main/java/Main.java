@@ -6,6 +6,10 @@ import kafka.statistics.ConsoleReporter;
 
 import java.io.File;
 import java.util.List;
+import java.util.Scanner;
+
+import kafka.export.JsonExporter;
+import kafka.export.XmlExporter;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -21,5 +25,27 @@ public class Main {
 
         ConsoleReporter reporter = new ConsoleReporter();
         reporter.print(res);
+
+        // simple interactive save menu
+        System.out.println();
+        System.out.println("Save report as: J - JSON, X - XML, N - none");
+        System.out.print(">>");
+        Scanner sc = new Scanner(System.in);
+        String choice = sc.nextLine().trim().toUpperCase();
+        try {
+            if ("J".equals(choice)) {
+                JsonExporter je = new JsonExporter();
+                je.save(res, "report.json");
+                System.out.println("Saved report.json");
+            } else if ("X".equals(choice)) {
+                XmlExporter xe = new XmlExporter();
+                xe.save(res, "report.xml");
+                System.out.println("Saved report.xml");
+            } else {
+                System.out.println("No file saved.");
+            }
+        } catch (Exception ex) {
+            System.out.println("Error saving report: " + ex.getMessage());
+        }
     }
 }
