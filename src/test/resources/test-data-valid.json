@@ -1,0 +1,23 @@
+[
+  {
+    "sensor": { "id": 1 },
+    "sensordatavalues": [ { "value": "20.5", "value_type": "temperature" }, { "value": "40", "value_type": "humidity" } ],
+    "id": 101,
+    "timestamp": "2026-05-19 10:00:00",
+    "location": { "latitude": "52.2297", "longitude": "21.0122" }
+  },
+  {
+    "sensor": { "id": 2 },
+    "sensordatavalues": [ { "value": "21.0", "value_type": "temperature" }, { "value": "41", "value_type": "humidity" } ],
+    "id": 102,
+    "timestamp": "2026-05-19 10:05:00",
+    "location": { "latitude": "52.2300", "longitude": "21.0100" }
+  },
+  {
+    "sensor": { "id": 3 },
+    "sensordatavalues": [ { "value": "19.8", "value_type": "temperature" }, { "value": "38", "value_type": "humidity" } ],
+    "id": 103,
+    "timestamp": "2026-05-19 10:10:00",
+    "location": { "latitude": "52.2280", "longitude": "21.0150" }
+  }
+]

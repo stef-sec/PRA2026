@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 import kafka.export.JsonExporter;
 import kafka.export.XmlExporter;
+import kafka.export.PdfExporter;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -28,11 +29,16 @@ public class Main {
 
         // simple interactive save menu
         System.out.println();
-        System.out.println("Save report as: J - JSON, X - XML, N - none");
+        System.out.println("Save report as: P - PDF, J - JSON, X - XML, N - none");
         System.out.print(">>");
         Scanner sc = new Scanner(System.in);
         String choice = sc.nextLine().trim().toUpperCase();
         try {
+            if ("P".equals(choice)) {
+                PdfExporter pe = new PdfExporter();
+                pe.save(res, "report.pdf");
+                System.out.println("Saved report.pdf");
+            } else
             if ("J".equals(choice)) {
                 JsonExporter je = new JsonExporter();
                 je.save(res, "report.json");
