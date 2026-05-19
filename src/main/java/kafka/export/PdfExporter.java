@@ -9,6 +9,9 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import java.io.File;
 
 public class PdfExporter {
+    /**
+     * Zapisuje statystyki do prostego PDF-a, budując treść ręcznie przez PDFBox.
+     */
     public void save(StatisticsResult r, String filePath) throws Exception {
         try (PDDocument doc = new PDDocument()) {
             PDPage page = new PDPage();

@@ -13,6 +13,9 @@ import kafka.export.XmlExporter;
 import kafka.export.PdfExporter;
 
 public class Main {
+    /**
+     * Uruchamia cały proces: pobiera dane, liczy statystyki, wypisuje wynik i pozwala zapisać raport.
+     */
     public static void main(String[] args) throws Exception {
         SensorDataClient client = new SensorDataClient();
         List<Root> data;

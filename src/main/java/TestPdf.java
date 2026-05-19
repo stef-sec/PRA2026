@@ -2,6 +2,9 @@ import kafka.export.PdfExporter;
 import kafka.statistics.StatisticsResult;
 
 public class TestPdf {
+    /**
+     * Szybko generuje przykładowy PDF, żeby ręcznie sprawdzić eksport bez uruchamiania całego programu.
+     */
     public static void main(String[] args) throws Exception {
         StatisticsResult r = new StatisticsResult();
         r.totalRecords = 3;

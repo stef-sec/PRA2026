@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ConsoleReporter {
+    /**
+     * Wypisuje statystyki do konsoli w czytelnym formacie, korzystając z gotowego obiektu wynikowego.
+     */
     public void print(StatisticsResult r) {
         System.out.println("=== Air sensors statistics ===");
         System.out.printf("Total records read: %d\n", r.totalRecords);

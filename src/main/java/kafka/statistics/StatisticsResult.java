@@ -33,6 +33,9 @@ public class StatisticsResult {
     public Map<Long, Integer> recordsPerLocation;
     public Map<Long, String> locationCoordinates;
 
+    /**
+     * Tworzy tekstową reprezentację wyniku, żeby łatwo podejrzeć wszystkie wyliczone pola.
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 
 public class StatisticsCalculator {
 
+    /**
+     * Przelicza surowe rekordy na gotowe statystyki, używając pętli do zebrania danych i strumieni do agregacji.
+     */
     public StatisticsResult compute(List<Root> records) {
         StatisticsResult r = new StatisticsResult();
         r.totalRecords = records.size();
